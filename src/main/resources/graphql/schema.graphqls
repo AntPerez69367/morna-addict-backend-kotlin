@@ -1,0 +1,21 @@
+type Query {
+  characterByName(name: String): Character
+}
+
+type Character {
+  name: String!
+  level: Integer
+  mark: Integer
+  stats: StatBlock
+  currentXP: Float
+  bankedXP: Float
+  soldXP: Float
+}
+
+type StatBlock {
+  vita: Integer
+  mana: Integer
+  might: Integer
+  grace: Integer
+  will: Integer
+}
